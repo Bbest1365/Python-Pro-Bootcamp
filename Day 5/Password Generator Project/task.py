@@ -16,11 +16,10 @@ for i in range(nr_symbols):
 for i in range(nr_numbers):
     text += random.choice(numbers)
 print(text)
+
+#Hard Generate password
 print(list(text))
 a = list(text)
 random.shuffle(a)
 print(a)
-# print(type(text))
-#Hard Generate password
-
-# print(''.join(random.shuffle(list(text))))
+print(''.join(a))
