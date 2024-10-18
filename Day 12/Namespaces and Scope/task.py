@@ -26,3 +26,5 @@ print(f"enemies outside function: {enemies}")
 # def my_function():
 #     # This works no problems
 #     print(my_global_var)
+
+#update
