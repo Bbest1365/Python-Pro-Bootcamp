@@ -6,6 +6,12 @@ print(logo)
 compare_A = random.choice(data)
 def rand():
     against_B = random.choice(data)
+    same =True
+    while same:
+        if compare_A == against_B:
+            against_B = random.choice(data)
+        else:
+            same =False
     print(f'Compare A: {compare_A['name']}, {compare_A['description']}, {compare_A['country']}')
     print(vs)
     print(f'Against B: {against_B['name']}, {against_B['description']}, {against_B['country']}')
