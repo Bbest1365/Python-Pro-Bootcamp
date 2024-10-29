@@ -6,3 +6,5 @@ for question in question_data:
     question_answer = question["answer"]
     new_question = Question("question_text","question_answer")
     question_bank.append(new_question)
+
+QuizBrain(question_bank)
