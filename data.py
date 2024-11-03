@@ -1,16 +1,35 @@
-question_data = [
-    {"text": "A slug's blood is green.", "answer": "True"},
-    {"text": "The loudest animal is the African Elephant.", "answer": "False"},
-    {"text": "Approximately one quarter of human bones are in the feet.", "answer": "True"},
-    {"text": "The total surface area of a human lungs is the size of a football pitch.", "answer": "True"},
-    {"text": "In West Virginia, USA, if you accidentally hit an animal with your car, you are free to take it home "
-             "to eat.", "answer": "True"},
-    {"text": "In London, UK, if you happen to die in the House of Parliament, you are entitled to a state funeral."
-             , "answer": "False"},
-    {"text": "It is illegal to pee in the Ocean in Portugal.", "answer": "True"},
-    {"text": "You can lead a cow down stairs but not up stairs.", "answer": "False"},
-    {"text": "Google was originally called 'Backrub'.", "answer": "True"},
-    {"text": "Buzz Aldrin's mother's maiden name was 'Moon'.", "answer": "True"},
-    {"text": "No piece of square dry paper can be folded in half more than 7 times.", "answer": "False"},
-    {"text": "A few ounces of chocolate can to kill a small dog.", "answer": "True"}
-]
+question_data =[
+        {"type": "boolean", "difficulty": "easy",
+         "category": "Entertainment: Music",
+         "question": "The alternative rock band, They Might Be Giants, released their album &#039;Flood&#039; in 1990. ",
+         "correct_answer": "True",
+         "incorrect_answers": ["False"]},
+        {"type": "boolean", "difficulty": "easy", "category": "Entertainment: Cartoon &amp; Animations",
+         "question": "Bill Cipher in the show &quot;Gravity Falls&quot; is the good guy.", "correct_answer": "False",
+         "incorrect_answers": ["True"]},
+        {"type": "boolean", "difficulty": "easy", "category": "Entertainment: Film",
+                                          "question": "In Alfred Hitchcock&#039;s film &#039;Psycho&#039; it is said he used chocolate syrup to simulate the blood in the famous shower scene from ",
+                                          "correct_answer": "True", "incorrect_answers": ["False"]},
+        {"type": "boolean", "difficulty": "easy", "category": "History",
+         "question": "Thomas Crapper was a plumber who invented the flushing toilet.", "correct_answer": "False",
+         "incorrect_answers": ["True"]},
+        {"type": "boolean", "difficulty": "easy", "category": "Entertainment: Film",
+                                          "question": "George Lucas directed the entire original Star Wars trilogy.",
+                                          "correct_answer": "False", "incorrect_answers": ["True"]},
+        {"type": "boolean", "difficulty": "easy", "category": "Entertainment: Comics",
+         "question": "The &quot;Pepe&quot; meme originated from a comic drawn by Matt Furie called &quot;Boy&#039;s Club&quot;?",
+         "correct_answer": "True", "incorrect_answers": ["False"]},
+        {"type": "boolean", "difficulty": "easy", "category": "General Knowledge",
+         "question": "The Great Wall of China is visible from the moon.", "correct_answer": "False",
+         "incorrect_answers": ["True"]},
+        {"type": "boolean", "difficulty": "easy", "category": "Entertainment: Video Games",
+         "question": "The name of the main character of the video game &quot;The Legend of Zelda&quot;, is Zelda.",
+         "correct_answer": "False", "incorrect_answers": ["True"]},
+        {"type": "boolean", "difficulty": "easy", "category": "Entertainment: Video Games",
+         "question": "Codemasters is the developer of the Gran Turismo series.", "correct_answer": "False",
+         "incorrect_answers": ["True"]},
+        {"type": "boolean", "difficulty": "easy", "category": "Entertainment: Music",
+                                          "question": "Korean girl group, TWICE, consists of 9 members",
+                                          "correct_answer": "True", "incorrect_answers": ["False"]}
+    ]
+
