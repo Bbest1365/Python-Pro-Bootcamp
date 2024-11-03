@@ -5,6 +5,7 @@ t.colormode(255)
 tim = t.Turtle()
 tim.speed("fastest")
 i=0
+tim.hideturtle()
 tim.penup()
 def walk():
     for i in range(10):
