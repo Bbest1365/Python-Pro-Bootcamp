@@ -1,13 +1,15 @@
-from turtle import Turtle, Screen
+import turtle as t
+import random
+tim = t.Turtle()
 
-tao = Turtle()
-tao.shape("turtle")
-tao.color("red")
+colors = ["green yellow","cyan","magenta","yellow","deep sky blue","deep pink","red","blue violet"]
 
-for i in range(4):
-    tao.forward(200)
-    tao.right(90)
-
-screen = Screen()
-screen.exitonclick()
-
+angle = [0,90,180,270]
+loop = True
+tim.pensize(15)
+tim.speed("fastest")
+while loop:
+    tim.color(random.choice(colors))
+    tim.forward(40)
+    direction = random.choice(angle)
+    tim.setheading(direction)
