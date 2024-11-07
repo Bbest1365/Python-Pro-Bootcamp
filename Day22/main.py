@@ -1,33 +1,33 @@
-from turtle import Screen, Turtle
-from snake import Snake
+import turtle
+from turtle import Turtle, Screen
+from ball import Ball
+from paddle import Paddle
 import time
 
 screen = Screen()
-screen.setup(width=600, height=600)
-screen.bgcolor('black')
-screen.title("My Snake Game")
+screen.bgcolor("black")
+screen.setup(width=800,height=600)
+screen.title("Pong")
 screen.tracer(0)
+ball = Ball()
 
-starting_positions = [(0, 0),(-20, 0),(-40, 0)]
-segments = []
+r_paddle = Paddle((350,0))
+l_paddle = Paddle((-350,0))
 
-snake = Snake()
+
 screen.listen()
-screen.onkey(snake.left,"Left")
-screen.onkey(snake.right,"Right")
-screen.onkey(snake.up,"Up")
-screen.onkey(snake.down,"Down")
-
+screen.onkey(r_paddle.go_up, 'Up')
+screen.onkey(r_paddle.go_down, 'Down')
+screen.onkey(l_paddle.go_up, 'w')
+screen.onkey(l_paddle.go_down, 's')
 
 game_is_on = True
 while game_is_on:
-    screen.update()
     time.sleep(0.1)
-
-
-    snake.move()
-
-
-
+    screen.update()
+    ball.move()
+    if ball.ycor() > 280 or ball.ycor() < -280:
+        #need to bounce
+        ball.bounce()
 
 screen.exitonclick()
