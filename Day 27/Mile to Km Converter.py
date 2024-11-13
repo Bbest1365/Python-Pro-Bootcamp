@@ -4,8 +4,8 @@ from tkinter import *
 
 window = Tk()
 window.title('Mile to Km converter')
-window.minsize(200,200)
-# window.config(padx=100, pady=50)
+# window.minsize(200,200)
+window.config(padx=20, pady=20)
 
 #Label
 my_label = Label(text="is equal to")
